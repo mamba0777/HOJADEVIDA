@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOJA DE VIDA </title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2e2c2c;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #f3efef;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .content {
+            display: flex;
+            padding: 2rem;
+        }
+        .left-column, .right-column {
+            flex: 1;
+            padding: 0 1rem;
+        }
+        .left-column {
+            border-right: 2px solid #727070; /* Color de la línea que divide las columnas */
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db; /* Color de la línea */
+            padding-bottom: 0.5rem;
+        }
+        img {
+            display: block;
+            margin: 0 auto 1rem;
+            border-radius: 50%;
+            border: 3px solid #3498db; /* Color de la línea de la imagen xd */
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        .contact-info {
+            background-color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .barraSkill{
+            background-color: #474a74;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            width: calc(100% - 45px);
+            margin-left: 45px;
+            position: relative;
+        }
+        .barralevel{
+            background-color: #0197fcc0;
+            height: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .barralevel::before {
+            content: attr(data-level);
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 12px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HOJA DE VIDA</h1>
+        </header>
+        <div class="content">
+            <div class="left-column">
+                <img src="foto111.jpg" alt="Foto de Cristian Sanchez" width="200" height="200">
+                <section class="contact-info">
+                    <h2>Información Personal</h2>
+                    <p><strong>Nombre:</strong> Cristian David Sanchez Romero</p>
+                    <p><strong>Edad:</strong> 22 años</p>
+                    <p><strong>Correo:</strong> <a href="mailto:crisdeivid1302@gmail.com">crisdeivid1302@gmail.com</a></p>
+                    <p><strong>Teléfono:</strong> <a href="tel:+573215645390">321 564 5390</a></p>
+                    <p><strong>Dirección:</strong> Cra. 11 # 11-22, Caicedonia Valle</p>
+                </section>
+                <section>
+                    <h2>Educación</h2>
+                    <h3>Universidad del Valle</h3>
+                    <ul>
+                        <li>Tecnólogo en Desarrollo de Software, 2021-2024</li>
+                        <li>Diplomado en Derechos Humanos DDHH, 2023</li>
+                        <li>Secretario Ejecutivo Sistematizado, 2019</li>
+                    </ul>
+                </section>
+               
+            </div>
+            <div class="right-column">
+                <section>
+                    <h2>Habilidades</h2>
+                    <ul>
+                        <li>Python</li>
+                            <div class="barraSkill">
+                                <div class="barralevel" style="width: 90%;" data-level="90%"></div>
+                            </div>
+                        <li>React, Vue.js, Angular</li>
+                            <div class="barraSkill">
+                                <div class="barralevel" style="width: 60%;" data-level="60%"></div>
+                            </div>
+                        <li>HTML5, CSS3, JavaScript</li>
+                            <div class="barraSkill">
+                                <div class="barralevel" style="width: 40%;" data-level="40%"></div>
+                            </div>
+                        <li>Node.js</li>
+                            <div class="barraSkill">
+                                <div class="barralevel" style="width: 30%;" data-level="30%"></div>
+                            </div>
+                        <li>Git, GitHub</li>
+                            <div class="barraSkill">
+                                <div class="barralevel" style="width: 30%;" data-level="30%"></div>
+                            </div>
+                        <li>Laravel</li>
+                            <div class="barraSkill">
+                                <div class="barralevel" style="width: 30%;" data-level="30%"></div>
+                            </div>
+                        <li>SQL</li>
+                            <div class="barraSkill">
+                                <div class="barralevel" style="width: 20%;" data-level="20%"></div>
+                            </div>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Experiencia Laboral</h2>
+                    <h3>Desarrollador Web Jr</h3>
+                    <ul>
+                        <li>Asistencia en desarrollo de pagina web de espacios universitarios con Laravel</li>
+                        <li>Desarrollo de pagina webs de reproductor de musica y de gifs con angular</li>
+                        <li>Desarrollo de pagina web de una tienda de ropa usada con angular</li>
+                        <li>Desarrollo de app para gestion de ventas tipo cajero automatico con python</li>
+                        <li>Desarrollo ed un juego 2D con python</li>
+                        <li>Implementación de metodologías ágiles (SCRUM)</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <p>🤠🔥© 2024 Cristian David Sanchez Romero | <a href="mailto:crisdeivid1302@gmail.com">crisdeivid1302@gmail.com</a> | <a href="https://wa.me/573215645390">321 564 5390</a></p>
+        </footer>
+    </div>
+</body>
+</html>
